@@ -3,20 +3,36 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">    <!--This tag expands which characters we can use in our HTML. Not required, but good to have-->
-  
-  <title>Carlos Juarez's links</title>
+  <!--for roboto font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      border: 1px red dashed;   
+  <!--for lora-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
+  <meta charset="UTF-8">    <!--This tag expands which characters we can use in our HTML. Not required, but good to have-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>  
+
+      html {
+        min-height: 100%;
       }
-      
+
       body {
-        padding-top:40px;
-        padding-bottom:40px;     
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(75deg, #191b5b, #00599c, #009bca, #00dee5, #48edea, #3fc9de, #48a5c7, #4f82a8);
+        color: rgba(255, 255, 255, 1.0);
+        font-family: "Lora";
       }
-      
+
       .avatar_image{
         width: 128px;
         height: 128px;
@@ -31,10 +47,58 @@
         object-fit: cover;
         border-radius: 48px;
       }
+
+      a {
+        color: rgba(255, 255, 255, 1.0)
+      }
+
+      .item{
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20 px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
   </style>
 </head>
-
 <body>          <!--Content goes inside here-->
+
 
   <!--Create a main frame for the rest of the blocks to be inside-->
   <div class="main-container">
@@ -42,7 +106,7 @@
     <!--Block for my cover photo-->
     <div class="image-row">
       <!--reference photo (just needs the name since its in same folder) and give it a name-->
-      <img src="Cover_photo.jpg" alt="Carlos Juarez headshot" class="avatar_image">
+      <img  src="Cover_photo.jpg" alt="Carlos Juarez headshot" class="avatar_image">
     </div>
 
     <div class="name-row">
@@ -50,22 +114,37 @@
       Carlos Juarez
     </div>
     
-    <div class="Social-icons-row">
+    <div class="social-icons-row">
       <!--<meta property="og:image" content="https://avatars.githubusercontent.com/u/182689730?v=4?s=400" />-->
       <a href="https://github.com/cjuarez8" target="_blank">
-        Github
+        <i class="fa-brands fa-github"></i> Github
       </a>
 
       <a href="https://www.linkedin.com/in/carlos-juarez1/" target="_blank">
-        LinkedIn
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
       </a>
     </div>
     
     <div class="links-row">
-      <a href="https://www.wikipedia.org/" target="blank"> Wikipedia</a>
-    </div>
 
-  </div>
+      <div class="item">
+        <img src="barca.jpg" class="thumbnail">
+        <a href="https://www.fcbarcelona.com/en/" target="_blank"> My favorite soccer team</a>
+      </div>
+
+      <div class="item">
+        <img src="cake.jpg" class="thumbnail">
+        <a href="https://sugarspunrun.com/tres-leches-cake/" target="_blank"> Recipe for tres leches cake</a>
+      </div>
+
+      <div class="item">
+        <img src="youtube.jpg" class="thumbnail">
+        <a href="https://www.youtube.com/watch?v=bFrmJMEdHCc" target="_blank"> Interesting video I found</a>
+      </div>
+
+    </div>    <!--links-row-->
+
+  </div>      <!--main-container-->
   
 </body>
 </html>
