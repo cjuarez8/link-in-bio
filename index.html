@@ -1,3 +1,71 @@
-<h1>This is my homepage</h1>
+<!DOCTYPE html>   <!--This is a boilerplate that every HTML requires-->
 
-<h2> My link in bio</h2>
+<html>
+
+<head>
+  <meta charset="UTF-8">    <!--This tag expands which characters we can use in our HTML. Not required, but good to have-->
+  
+  <title>Carlos Juarez's links</title>
+
+  <style>
+    * {
+      border: 1px red dashed;   
+      }
+      
+      body {
+        padding-top:40px;
+        padding-bottom:40px;     
+      }
+      
+      .avatar_image{
+        width: 128px;
+        height: 128px;
+        object-fit: cover;   
+        border-radius: 128px;
+        justify-content: center;
+      }
+
+      .thumbnail{
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
+      }
+  </style>
+</head>
+
+<body>          <!--Content goes inside here-->
+
+  <!--Create a main frame for the rest of the blocks to be inside-->
+  <div class="main-container">
+
+    <!--Block for my cover photo-->
+    <div class="image-row">
+      <!--reference photo (just needs the name since its in same folder) and give it a name-->
+      <img src="Cover_photo.jpg" alt="Carlos Juarez headshot" class="avatar_image">
+    </div>
+
+    <div class="name-row">
+      <!--Simple line that displays my name-->
+      Carlos Juarez
+    </div>
+    
+    <div class="Social-icons-row">
+      <!--<meta property="og:image" content="https://avatars.githubusercontent.com/u/182689730?v=4?s=400" />-->
+      <a href="https://github.com/cjuarez8" target="_blank">
+        Github
+      </a>
+
+      <a href="https://www.linkedin.com/in/carlos-juarez1/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+    
+    <div class="links-row">
+      <a href="https://www.wikipedia.org/" target="blank"> Wikipedia</a>
+    </div>
+
+  </div>
+  
+</body>
+</html>
