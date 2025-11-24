@@ -5,4 +5,6 @@ I first started with creating the body of the website and all the components of 
 Afterwards, I create hyperlinks that take the user to various websites, including my LinkedIn and Github.
 I then focused on making the website look more visually appealing by adding a nice background and images with the hyperlinks.
 
+To be able to run the repo, simply use the link https://link-in-bio-cill.onrender.com/ to preview the website. From there, you can click on any links and explore a little bit about me.
+
 Some rights reserved — see [LICENSE.txt](LICENSE.txt)
