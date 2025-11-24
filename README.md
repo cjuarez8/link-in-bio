@@ -1,6 +1,4 @@
-# static-html-template
-
-Use this template to create static HTML websites and deploy them on Render.
+# html template
 
 In this repository, I made a fully responsive website using HTML and CSS. To do this, I made an index.html file that where you can find the majority of the code. 
 I first started with creating the body of the website and all the components of it, including my photo, name, and links of stuff that I like.
